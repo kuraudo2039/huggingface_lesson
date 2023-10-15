@@ -1,0 +1,4 @@
+*.out
+*.ckpt
+*.safesensors
+.ipynb_checkpoints/
