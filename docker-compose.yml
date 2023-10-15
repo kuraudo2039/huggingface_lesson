@@ -1,0 +1,42 @@
+version: "3.9"
+services:
+  nlp:
+    # イメージ名を設定
+    image: huggingface-lesson
+    build:
+      # Dockerfileのあるフォルダを設定
+      context: .
+      dockerfile: Dockerfile
+    # restart: always
+    # jupyterをコンテナ起動時に起動しておく時、以下を設定
+    # entrypoint: >
+    #   jupyter-lab
+    #   --allow-root
+    #   --ip=0.0.0.0
+    #   --port=8888
+    #   --no-browser
+    #   --NotebookApp.token=''
+    #   --notebook-dir=/workspace
+    expose:
+      - "8888"
+    ports:
+      - "8888:8888"
+    volumes:
+      # - ./py3/root_jupyter:/root/./jupyter
+      - ./workdir:/home/workdir
+    working_dir: /home/workdir
+    container_name: "HuggingFace-Lesson"
+    # GPU設定を追加
+    command: sh -c "nvidia-smi && tail -f /dev/null"
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: all
+            capabilities: [
+              gpu,
+              utility, # nvidia-smi
+              compute, # CUDA
+              # video # NVDEC/NVENC/NVCUVID. ffmpegのアクセラレーションとかに使うやつ。機械学習には基本いらないかな？
+            ]

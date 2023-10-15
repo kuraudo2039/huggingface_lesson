@@ -1,0 +1,228 @@
+[W 2023-10-15 05:25:59.831 ServerApp] Unrecognized alias: 'b', it will have no effect.
+[I 2023-10-15 05:25:59.838 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2023-10-15 05:25:59.846 ServerApp] Package jupyter_lsp took 0.0074s to import
+[W 2023-10-15 05:25:59.846 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-10-15 05:25:59.850 ServerApp] Package jupyter_server_terminals took 0.0030s to import
+[I 2023-10-15 05:25:59.850 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2023-10-15 05:25:59.850 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-10-15 05:25:59.851 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2023-10-15 05:25:59.854 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2023-10-15 05:25:59.857 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-10-15 05:25:59.858 ServerApp] Writing Jupyter server cookie secret to /root/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2023-10-15 05:25:59.987 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-10-15 05:25:59.999 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-10-15 05:26:00.001 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2023-10-15 05:26:00.002 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2023-10-15 05:26:00.003 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.11/site-packages/jupyterlab
+[I 2023-10-15 05:26:00.003 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 2023-10-15 05:26:00.004 LabApp] Extension Manager is 'pypi'.
+[I 2023-10-15 05:26:00.006 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-10-15 05:26:00.006 ServerApp] Serving notebooks from local directory: /home/workdir
+[I 2023-10-15 05:26:00.006 ServerApp] Jupyter Server 2.7.3 is running at:
+[I 2023-10-15 05:26:00.006 ServerApp] http://8f136b643879:8888/lab?token=6f37c1b3fad295aec067fc93c111549d315efb5c6e713995
+[I 2023-10-15 05:26:00.007 ServerApp]     http://127.0.0.1:8888/lab?token=6f37c1b3fad295aec067fc93c111549d315efb5c6e713995
+[I 2023-10-15 05:26:00.007 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2023-10-15 05:26:00.009 ServerApp] No web browser found: Error('could not locate runnable browser').
+[C 2023-10-15 05:26:00.010 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///root/.local/share/jupyter/runtime/jpserver-38-open.html
+    Or copy and paste one of these URLs:
+        http://8f136b643879:8888/lab?token=6f37c1b3fad295aec067fc93c111549d315efb5c6e713995
+        http://127.0.0.1:8888/lab?token=6f37c1b3fad295aec067fc93c111549d315efb5c6e713995
+[I 2023-10-15 05:26:00.022 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2023-10-15 05:26:00.224 ServerApp] Clearing invalid/expired login cookie username-127-0-0-1-8888
+[W 2023-10-15 05:26:00.224 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 753, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2023-10-15 05:26:00.226 ServerApp] 403 GET /api/kernels/07636e7c-7be8-4316-8b11-d64d8154d09d?1697347560220 (@172.21.0.1) 2.12ms referer=http://127.0.0.1:8888/lab/tree/ch2/hello_world.ipynb
+[W 2023-10-15 05:26:00.230 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 753, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2023-10-15 05:26:00.231 ServerApp] 403 GET /api/kernels?1697347560228 (@172.21.0.1) 1.01ms referer=http://127.0.0.1:8888/lab/tree/ch2/hello_world.ipynb
+[W 2023-10-15 05:26:01.017 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 753, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2023-10-15 05:26:01.017 ServerApp] 403 GET /api/kernels?1697347561014 (@172.21.0.1) 1.18ms referer=http://127.0.0.1:8888/lab/tree/ch2/hello_world.ipynb
+[W 2023-10-15 05:26:07.188 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 753, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2023-10-15 05:26:07.189 ServerApp] 403 GET /api/contents/ch2?content=1&1697347567185 (@172.21.0.1) 1.21ms referer=http://127.0.0.1:8888/lab/tree/ch2/hello_world.ipynb
+[W 2023-10-15 05:26:11.019 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 753, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2023-10-15 05:26:11.020 ServerApp] 403 GET /api/kernels?1697347571017 (@172.21.0.1) 1.03ms referer=http://127.0.0.1:8888/lab/tree/ch2/hello_world.ipynb
+[W 2023-10-15 05:26:11.511 ServerApp] Couldn't authenticate WebSocket connection
+[W 2023-10-15 05:26:11.521 ServerApp] 403 GET /api/events/subscribe?token=[secret] (@172.21.0.1) 9.99ms referer=None
+[W 2023-10-15 05:26:17.192 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 753, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2023-10-15 05:26:17.193 ServerApp] 403 GET /api/contents/ch2?content=1&1697347577190 (@172.21.0.1) 1.10ms referer=http://127.0.0.1:8888/lab/tree/ch2/hello_world.ipynb
+[W 2023-10-15 05:26:27.197 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 753, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2023-10-15 05:26:27.198 ServerApp] 403 GET /api/contents/ch2?content=1&1697347587195 (@172.21.0.1) 1.18ms referer=http://127.0.0.1:8888/lab/tree/ch2/hello_world.ipynb
+[W 2023-10-15 05:26:28.453 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 753, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2023-10-15 05:26:28.454 ServerApp] 403 GET /api/kernels?1697347588450 (@172.21.0.1) 1.13ms referer=http://127.0.0.1:8888/lab/tree/ch2/hello_world.ipynb
+[W 2023-10-15 05:26:32.711 ServerApp] Couldn't authenticate WebSocket connection
+[W 2023-10-15 05:26:32.712 ServerApp] 403 GET /api/events/subscribe?token=[secret] (@172.21.0.1) 1.41ms referer=None
+[I 2023-10-15 05:26:35.028 LabApp] 302 GET /lab/tree/ch2/hello_world.ipynb (@172.21.0.1) 0.52ms
+[I 2023-10-15 05:26:55.567 ServerApp] User 8fac794dc7e94a21a2a391e5c7bbd4e5 logged in.
+[I 2023-10-15 05:26:55.568 ServerApp] 302 POST /login?next=%2Flab%2Ftree%2Fch2%2Fhello_world.ipynb (8fac794dc7e94a21a2a391e5c7bbd4e5@172.21.0.1) 1.26ms
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[W 2023-10-15 05:26:57.062 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2023-10-15 05:26:58.038 ServerApp] Writing notebook-signing key to /root/.local/share/jupyter/notebook_secret
+[W 2023-10-15 05:26:58.039 ServerApp] Notebook ch2/hello_world.ipynb is not trusted
+[I 2023-10-15 05:26:58.131 ServerApp] Kernel started: 6fa5ba30-68ec-428d-9bca-62e332cb6904
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2023-10-15 05:26:58.505 ServerApp] Connecting to kernel 6fa5ba30-68ec-428d-9bca-62e332cb6904.
+[I 2023-10-15 05:26:58.519 ServerApp] Connecting to kernel 6fa5ba30-68ec-428d-9bca-62e332cb6904.
+[I 2023-10-15 05:26:58.533 ServerApp] Connecting to kernel 6fa5ba30-68ec-428d-9bca-62e332cb6904.
+[I 2023-10-15 05:32:58.337 ServerApp] Saving file at /ch2/hello_world.ipynb
+[I 2023-10-15 05:34:58.738 ServerApp] Saving file at /ch2/hello_world.ipynb
+[I 2023-10-15 05:36:58.792 ServerApp] Saving file at /ch2/hello_world.ipynb
+[I 2023-10-15 05:38:58.838 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 05:40:58.911 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 05:42:58.982 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 05:44:29.687 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 05:46:29.771 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 05:47:53.825 ServerApp] Starting buffering for 6fa5ba30-68ec-428d-9bca-62e332cb6904:2de23da0-2a3e-4564-8fcd-4eff0e1542bb
+[W 2023-10-15 05:47:55.545 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2023-10-15 05:47:55.605 ServerApp] Connecting to kernel 6fa5ba30-68ec-428d-9bca-62e332cb6904.
+[I 2023-10-15 05:47:55.746 ServerApp] Starting buffering for 6fa5ba30-68ec-428d-9bca-62e332cb6904:58876183-428a-436a-b81f-549e426a8d2b
+[I 2023-10-15 05:47:56.043 ServerApp] Connecting to kernel 6fa5ba30-68ec-428d-9bca-62e332cb6904.
+[I 2023-10-15 05:49:39.229 ServerApp] Starting buffering for 6fa5ba30-68ec-428d-9bca-62e332cb6904:0d6be962-3563-4564-849d-4976d7215739
+[W 2023-10-15 05:49:39.261 ServerApp] 404 GET /lab/extensions/jupyterlab-theme-onedark/static/remoteEntry.07e1f351c23fbc1a7c5f.js (8fac794dc7e94a21a2a391e5c7bbd4e5@172.21.0.1) 2.03ms referer=http://127.0.0.1:8888/lab/tree/ch2
+[W 2023-10-15 05:49:40.929 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2023-10-15 05:49:40.988 ServerApp] Connecting to kernel 6fa5ba30-68ec-428d-9bca-62e332cb6904.
+[I 2023-10-15 05:49:41.126 ServerApp] Starting buffering for 6fa5ba30-68ec-428d-9bca-62e332cb6904:6bb8e42c-8314-4c88-85e2-c6f6281a2433
+[I 2023-10-15 05:49:41.442 ServerApp] Connecting to kernel 6fa5ba30-68ec-428d-9bca-62e332cb6904.
+[I 2023-10-15 05:51:41.335 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 05:52:57.295 ServerApp] Starting buffering for 6fa5ba30-68ec-428d-9bca-62e332cb6904:2cbf2b7a-9279-421f-bc27-8f5904070962
+[W 2023-10-15 05:52:57.314 ServerApp] 404 GET /lab/extensions/jupyterlab-theme-onedark/static/remoteEntry.07e1f351c23fbc1a7c5f.js (8fac794dc7e94a21a2a391e5c7bbd4e5@172.21.0.1) 1.09ms referer=http://127.0.0.1:8888/lab/tree/ch2
+[W 2023-10-15 05:52:58.997 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2023-10-15 05:52:59.055 ServerApp] Connecting to kernel 6fa5ba30-68ec-428d-9bca-62e332cb6904.
+[I 2023-10-15 05:52:59.193 ServerApp] Starting buffering for 6fa5ba30-68ec-428d-9bca-62e332cb6904:3d7f1694-d783-4a5b-afe4-82f8a498724b
+[I 2023-10-15 05:52:59.476 ServerApp] Connecting to kernel 6fa5ba30-68ec-428d-9bca-62e332cb6904.
+[I 2023-10-15 05:53:53.604 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 05:54:14.466 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 05:56:14.544 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 05:58:14.631 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:00:15.332 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:02:15.421 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:04:15.510 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:06:15.596 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:08:15.681 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:14:15.772 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:16:09.682 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:18:09.771 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:20:09.862 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:22:09.946 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:24:10.021 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:26:10.103 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:28:10.191 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:28:35.363 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:30:35.455 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:32:35.549 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:34:10.395 ServerApp] Creating new notebook in /ch2
+[I 2023-10-15 06:34:10.567 ServerApp] Kernel started: a5ef63a2-c8ec-4034-8ce2-ae9efe3264a9
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2023-10-15 06:34:11.040 ServerApp] Connecting to kernel a5ef63a2-c8ec-4034-8ce2-ae9efe3264a9.
+[I 2023-10-15 06:34:23.737 ServerApp] Saving file at /ch2/dataset.ipynb
+[I 2023-10-15 06:36:10.549 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 06:38:10.631 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 06:38:47.328 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 08:36:47.461 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 08:38:48.122 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 08:40:48.195 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 08:44:48.269 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 08:46:48.347 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 08:48:48.427 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 08:52:48.504 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 08:54:48.592 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 08:56:48.664 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 08:57:06.014 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 08:59:03.193 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 08:59:41.864 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 09:01:41.942 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 09:03:42.027 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 09:05:42.111 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 09:07:42.199 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 09:09:42.277 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 09:11:42.400 ServerApp] Saving file at /ch2/tokenize.ipynb
+[I 2023-10-15 09:13:43.327 ServerApp] Saving file at /ch2/tokenize.ipynb

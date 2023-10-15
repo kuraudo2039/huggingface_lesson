@@ -1,0 +1,22 @@
+numpy
+matplotlib
+# scipy
+# cupy
+
+pandas
+
+# jupyterlab
+pysqlite3
+
+# huggingface transformers
+transformers
+datasets
+accelerate
+torch
+torchvision
+torchaudio
+
+# require for some models
+sentencepiece
+protobuf
+einops
