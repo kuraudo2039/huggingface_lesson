@@ -1,4 +1,5 @@
 *.out
+*.log
 *.ckpt
 *.safesensors
 .ipynb_checkpoints/
