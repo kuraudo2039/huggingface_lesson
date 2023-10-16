@@ -3,7 +3,10 @@ matplotlib
 # scipy
 # cupy
 
+# require for huggingface_lesson
 pandas
+scikit-learn
+umap-learn
 
 # jupyterlab
 pysqlite3
